@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Ubuntu:wght@300&display=swap");
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#menu {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 500px;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item-info {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.item-price {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #0099cc;
+}
+
+.item-description {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #eee;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.filter-button:hover {
+  background-color: #ddd;
+}
+
+#logo {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  border: 2px solid #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Chewy", cursive;
+}
+
+#logo img {
+  margin-top: 10px;
+  object-fit: cover;
+  height: 70%;
+  width: 80%;
+}
+
+#logo p {
+  position: absolute;
+  bottom: 10px;
+  font-size: 1.3rem;
+  /* margin-top: 20px; */
+  margin: 0;
+}
